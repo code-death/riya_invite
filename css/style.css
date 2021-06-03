@@ -22,8 +22,7 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  background: -webkit-linear-gradient(30deg, #5B5893, #2c2a49);
-  background: linear-gradient(60deg, #5B5893, #2c2a49);
+  background-color: #EFDDF2;
 }
 .demo__gallery {
   width: 688px;
