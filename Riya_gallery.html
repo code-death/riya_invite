@@ -36,10 +36,9 @@
       border: none;
     }
     #Riya {
-      position: absolute;
-      width: 1920px;
-      height: 1280px;
-      background-color: rgba(239,221,242,1);
+      width: 100vw;
+      height: 100vh;
+      background-color: rgba(239, 221, 242, 1);
       overflow: hidden;
       --web-view-name: Riya;
       --web-view-id: Riya;
@@ -54,18 +53,19 @@
     .Nav {
       position: absolute;
       overflow: visible;
-      width: 1920px;
+      width: 100vw;
       height: 572px;
       left: 0px;
       top: 0px;
     }
     #plt {
-      position: absolute;
-      width: 1481px;
-      height: 518px;
-      left: 400px;
-      top: 21px;
+      width: 100vw;
+      height: 20vh;
       overflow: visible;
+      background-color: rgba(255, 128, 177, 1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
     #Rectangle_4 {
       fill: rgba(36,21,24,1);
@@ -77,8 +77,9 @@
       shape-rendering: auto;
     }
     .Rectangle_4 {
+      transform: scale(0.20);
+      background-color: rgba(36, 21, 24, 1);
       filter: drop-shadow(13px 13px 9px rgba(212, 52, 94, 1));
-      position: absolute;
       overflow: visible;
       width: 1508px;
       height: 545px;
@@ -247,29 +248,10 @@
   
     }
     .images {
-      height: 29.5vw;
-    }
-    #first {
-      width: 13vw;
-      padding-left: 20px;
-
-    }
-    #sec{
-      width: 13vw;
-      padding-left: 20px;
-    }
-    #third{
-      position: absolute;
-      width: 13vw;
-      left: 73vw;
-      
-      
-    }
-    #fourth {
-      padding-left: 20px;
-      width: 13vw;
-      position: absolute;
-      left: 86vw;
+      height: 240px;
+      z-index: 0;
+      width: 180px;
+      padding: 0 10px;
     }
   
   </style>
@@ -3120,100 +3102,92 @@
 
 <body>
   <div id="Riya">
-    <svg class="Nav">
-      <rect id="Nav" rx="0" ry="0" x="0" y="0" width="1920" height="572">
-      </rect>
-    </svg>
     <div id="plt">
-      <svg class="Rectangle_4">
-        <rect id="Rectangle_4" rx="0" ry="0" x="0" y="0" width="1481" height="518">
-        </rect>
-      </svg>
-      <div id="Buttons">
-        <button >
-        <svg class="Rectangle_26">
-          <rect id="Rectangle_26" rx="0" ry="0" x="0" y="0" width="181" height="181">
-          </rect>
-        </svg></button>
-        <button onclick="window.location.href='./Riya_fake1.html'">
-    
-        <svg class="Rectangle_37">
-          <rect id="Rectangle_37" rx="0" ry="0" x="0" y="0" width="181" height="181">
-          </rect>
-        </svg></button>
-        <button onclick="window.location.href='./Riya_home.html'">
-    
-        <svg class="Rectangle_29">
-          <rect id="Rectangle_29" rx="0" ry="0" x="0" y="0" width="181" height="181">
-          </rect>
-        </svg></button>
-        <button onclick="playAudio('./pkp1.mp3')">
-        <svg class="Rectangle_31">
-          <rect id="Rectangle_31" rx="0" ry="0" x="0" y="0" width="181" height="181">
-          </rect>
-        </svg></button>
-        <button onclick="window.location.href='./Riya_fake2.html'">
-        <svg class="Rectangle_33">
-          <rect id="Rectangle_33" rx="0" ry="0" x="0" y="0" width="181" height="181">
-          </rect>
-        </svg></button>
-        <button onclick="window.location.href='./Riya_videos.html'">
-        <svg class="Rectangle_35">
-          <rect id="Rectangle_35" rx="0" ry="0" x="0" y="0" width="181" height="181">
-          </rect>
-        </svg></button>
-        <button onclick="window.location.href='./Riya_fake3.html'">
-        <svg class="Rectangle_27">
-          <rect id="Rectangle_27" rx="0" ry="0" x="0" y="0" width="181" height="181">
-          </rect>
-        </svg></button>
-        <button >
-        <svg class="Rectangle_38">
-          <rect id="Rectangle_38" rx="0" ry="0" x="0" y="0" width="181" height="181">
-          </rect>
-        </svg></button>
-        <button onclick="window.location.href='./Riya_gallery.html'">
-        <svg class="Rectangle_28">
-          <rect id="Rectangle_28" rx="0" ry="0" x="0" y="0" width="181" height="181">
-          </rect>
-        </svg></button>
-        <button onclick="playAudio('./pkp1.mp3')">
-        <svg class="Rectangle_30">
-          <rect id="Rectangle_30" rx="0" ry="0" x="0" y="0" width="181" height="181">
-          </rect>
-        </svg></button>
-        <button onclick="window.location.href='./Riya_fake3.html'">
-        <svg class="Rectangle_32">
-          <rect id="Rectangle_32" rx="0" ry="0" x="0" y="0" width="181" height="181">
-          </rect>
-        </svg></button>
-        <button onclick="window.location.href='./Riya_meme.html'">
-        <svg class="Rectangle_34">
-          <rect id="Rectangle_34" rx="0" ry="0" x="0" y="0" width="181" height="181">
-          </rect>
-        </svg>
-        </button>
+      <div class="nav-wrapper">
+        <div class="Rectangle_4">
+          <div id="Buttons">
+            <button>
+              <svg class="Rectangle_26">
+                <rect id="Rectangle_26" rx="0" ry="0" x="0" y="0" width="181" height="181">
+                </rect>
+              </svg></button>
+            <button onclick="window.location.href='./Riya_fake1.html'">
+
+              <svg class="Rectangle_37">
+                <rect id="Rectangle_37" rx="0" ry="0" x="0" y="0" width="181" height="181">
+                </rect>
+              </svg></button>
+            <button onclick="window.location.href='./Riya_home.html'">
+
+              <svg class="Rectangle_29">
+                <rect id="Rectangle_29" rx="0" ry="0" x="0" y="0" width="181" height="181">
+                </rect>
+              </svg></button>
+            <button onclick="playAudio('./pkp1.mp3')">
+              <svg class="Rectangle_31">
+                <rect id="Rectangle_31" rx="0" ry="0" x="0" y="0" width="181" height="181">
+                </rect>
+              </svg></button>
+            <button onclick="window.location.href='./Riya_fake2.html'">
+              <svg class="Rectangle_33">
+                <rect id="Rectangle_33" rx="0" ry="0" x="0" y="0" width="181" height="181">
+                </rect>
+              </svg></button>
+            <button onclick="window.location.href='./Riya_videos.html'">
+              <svg class="Rectangle_35">
+                <rect id="Rectangle_35" rx="0" ry="0" x="0" y="0" width="181" height="181">
+                </rect>
+              </svg></button>
+            <button onclick="window.location.href='./Riya_fake3.html'">
+              <svg class="Rectangle_27">
+                <rect id="Rectangle_27" rx="0" ry="0" x="0" y="0" width="181" height="181">
+                </rect>
+              </svg></button>
+            <button>
+              <svg class="Rectangle_38">
+                <rect id="Rectangle_38" rx="0" ry="0" x="0" y="0" width="181" height="181">
+                </rect>
+              </svg></button>
+            <button onclick="window.location.href='./Riya_gallery.html'">
+              <svg class="Rectangle_28">
+                <rect id="Rectangle_28" rx="0" ry="0" x="0" y="0" width="181" height="181">
+                </rect>
+              </svg></button>
+            <button onclick="playAudio('./pkp1.mp3')">
+              <svg class="Rectangle_30">
+                <rect id="Rectangle_30" rx="0" ry="0" x="0" y="0" width="181" height="181">
+                </rect>
+              </svg></button>
+            <button onclick="window.location.href='./Riya_fake3.html'">
+              <svg class="Rectangle_32">
+                <rect id="Rectangle_32" rx="0" ry="0" x="0" y="0" width="181" height="181">
+                </rect>
+              </svg></button>
+            <button onclick="window.location.href='./Riya_meme.html'">
+              <svg class="Rectangle_34">
+                <rect id="Rectangle_34" rx="0" ry="0" x="0" y="0" width="181" height="181">
+                </rect>
+              </svg>
+            </button>
+          </div>
+          <img id="Image_1" src="Image_1.png" srcset="Image_1.png 1x">
         </div>
-      <img id="Image_1" src="Image_1.png" srcset="Image_1.png 1x">
-        
+
+      </div>
+
+    </div>
+    <div class="demo">
+      <img class="images" height="800px" src="./js/pics/a.jpeg" alt="">
+      <img class="images" height="800px" src="./js/pics/b.jpeg" alt="">
+      <div class="demo__gallery">
+      </div>
+      <img class="images" height="800px" src="./js/pics/c.jpeg" alt="">
+      <img class="images" height="800px" src="./js/pics/d.jpeg" alt="">
     </div>
   </div>
-  <div class="demo">
-  <div class="demo__help">
-    Choose a photo
-  </div>
-  <div class="demo__gallery">
-  </div>  
-</div>
-  
-<div id="side_pics">
-  <span><figure><img class="images" id="first" height="800px" src="./js/pics/a.jpeg" alt=""></figure></span>
-  <span><figure><img class="images" id="sec" height="800px" src="./js/pics/b.jpeg" alt=""></figure></span>
-  <span id="span_"><figure><img class="images" id="third" height="800px" src="./js/pics/c.jpeg" alt=""></figure></span>
-  <span><figure><img class="images" id="fourth" height="800px" src="./js/pics/d.jpeg" alt=""></figure></span>
-</div>
-<script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+  <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
 
-    <script src="js/index.js"></script>
+  <script src="js/index.js"></script>
 </body>
+
 </html>
